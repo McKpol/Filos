@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *:hover{
+    outline: 1px solid white;
+} */
+
+.horizontal-scroll {
+    animation: infiniteScroll 5s linear infinite;
+}
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(calc(0% + 150px));
+    }
+    100% {
+        transform: translateX(calc(0px - 150%));
+    }
+}
